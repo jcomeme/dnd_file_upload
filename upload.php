@@ -1,7 +1,7 @@
 <?php
 
-if(is_uploaded_file($_FILES['file']['tmp_name'])) {
-	move_uploaded_file($_FILES['file']['tmp_name'], './' . $_FILES['file']['name']);
+
+for ($i=0; $i < count($_FILES); $i++) {
+  move_uploaded_file($_FILES['file'.$i]['tmp_name'], $_POST['path'] . $_FILES['file'.$i]['name']);
 }
 
-?>
