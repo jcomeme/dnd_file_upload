@@ -16,9 +16,9 @@ PHP からファイルを書き込むためにパーミッションを設定す�
 
 ## Usage
 
-'''
+```
 $('selector').dndupload(target, filepath, callback);
-'''
+```
 
 ### target
 _String_
